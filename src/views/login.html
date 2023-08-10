@@ -1,0 +1,62 @@
+
+  <main id="main" class="tw-mt-[-40px] mt-[100px]">
+    <!-- ======= Breadcrumbs ======= -->
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="tw-font-medium	 tw-text-[#16df7e]">Đăng Nhập</h2>
+          <ol>
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li>Đăng Nhập</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <section class="inner-page">
+      <div class="contact">
+        <div class="container">
+          <div class="section-title">
+            <span>Đăng Nhập</span>
+            <h2>Đăng Nhập</h2>
+            <p></p>
+          </div>
+  
+          <div class="row tw-justify-center">
+            <div class="col-lg-10 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form class="php-email-form" name="frmLogin">
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="name">Username</label>
+                    <input ng-model="username" type="text" name="username" class="form-control" id="name" required minlength="6" />
+                    <small ng-show="frmLogin.username.$error.required" id="username" class="form-text text-danger">Vui lòng nhập tài khoản</small>
+                    <small ng-show="frmLogin.username.$error.minlength" class="form-text text-danger">Tên tài khoản phải hơn 6 kí tự</small>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="name">Mật Khẩu</label>
+                    <input ng-model="password" type="password" class="form-control" name="password" id="email" required>
+                    <small ng-show="frmLogin.password.$error.required" id="password" class="form-text text-danger">Vui lòng nhập mật khẩu</small>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col">
+                    <a href="#!/forgotpass" class="tw-font-medium">Quên Mật Khẩu</a>
+                  </div>
+                </div>
+                <div class="text-center tw-mt-5">
+                  <button ng-click="login()" ng-disabled="frmLogin.$invalid"
+                  class="tw-ml-5 tw-bg-[#16df7e] tw-py-[10px] tw-px-[24px] tw-border-0 tw-rounded-[4px] tw-text-white hover:tw-bg-[#206bfb] hover:tw-text-white"
+                  style="transition: 0.4s">Đăng Nhập</button>
+                  <a href="#!/register" class="tw-ml-5 tw-bg-[#16df7e] tw-py-[10px] tw-px-[24px] tw-border-0 tw-rounded-[4px] tw-text-white hover:tw-bg-[#206bfb] hover:tw-text-white" style="transition: 0.4s;">Đăng Ký</a>
+                </div>
+              </form>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>

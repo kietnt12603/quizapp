@@ -1,0 +1,52 @@
+  <main id="main" class="tw-mt-[-40px]">
+    <section class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="tw-font-medium	 tw-text-[#16df7e]">Quên Mật Khẩu</h2>
+          <ol>
+            <li><a href="./index.html">Trang Chủ</a></li>
+            <li>Quên Mật Khẩu</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+    <section class="inner-page">
+      <div id="contact" class="contact">
+        <div class="container">
+          <div class="section-title">
+            <span>Quên Mật Khẩu</span>
+            <h2>Quên Mật Khẩu</h2>
+            <p></p>
+          </div>
+  
+          <div class="row tw-justify-center">
+            <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+              <form class="php-email-form" name="frmRegister">
+                <div class="row">
+                  <div class="form-group col-md-12">
+                    <label for="name">Username</label>
+                    <input ng-model="username" type="text" name="username" class="form-control" id="name" required>
+                    <small ng-show="frmRegister.username.$invalid" id="username" class="form-text text-danger">Vui lòng nhập tài khoản</small>
+                  </div>
+                  <div class="form-group col-md-12">
+                    <label for="name">Email</label>
+                    <input ng-model="email" type="email" class="form-control" name="email" id="email" required>
+                    <small ng-show="frmRegister.email.$error.required" id="email" class="form-text text-danger">Vui lòng nhập email</small>
+                    <small ng-show="frmRegister.email.$error.email" id="email" class="form-text text-danger">Không đúng định dạng email</small>
+                  </div>
+                </div>
+                <div class="text-center tw-mt-5">
+                  <button ng-click="getPass()"
+                  class="tw-ml-5 tw-bg-[#16df7e] tw-py-[10px] tw-px-[24px] tw-border-0 tw-rounded-[4px] tw-text-white hover:tw-bg-[#206bfb] hover:tw-text-white"
+                  style="transition: 0.4s">Quên Mật Khẩu</button>
+                </div>
+              </form>
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>

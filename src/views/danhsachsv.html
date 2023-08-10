@@ -1,0 +1,145 @@
+<main id="main" class="tw-mt-[-40px] mt-[100px]">
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="tw-font-medium	 tw-text-[#16df7e]">Danh Sách</h2>
+        <ol>
+          <li><a href="./index.html">Trang Chủ</a></li>
+          <li>Danh Sách</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <section class="inner-page container min-h-[500px]">
+    <div class="row tw-pb-[-30px]">
+      <div ng-show="role == 1" class="div-12 tw-mb-3 tw-text-center">
+        <button class="btn btn-primary" data-toggle="modal" data-target="#categoryAddModal">
+          Thêm Danh Mục
+        </button>
+      </div>
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead class="">
+            <tr class="text-center">
+              <th>Họ Và Tên</th>
+              <th>Tên Đăng Nhập</th>
+              <th>Email</th>
+              <th>Học Phí</th>
+              <th ng-show="role == 1">Hành Động</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in danhsachsv|limitTo:pageSize:begin">
+              <td>{{item.fullname}}</td>
+              <td>{{item.username}}</td>
+              <td>{{item.email}}</td>
+              <td class="text-center">{{item.schoolfee}}</td>
+              <td ng-show="role == 1" class="text-center">
+                <button ng-click="deletes(item.id)" class="btn btn-danger">Xóa</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-12">
+        <div class="text-center">
+          <button ng-click="first()" class="btn btn-primary text-light">First</button>
+          <button ng-click="prev()" class="btn btn-info text-light">Prev</button>
+          <button ng-click="next()" class="btn btn-info text-light">Next</button>
+          <button ng-click="last()" class="btn btn-primary text-light">Last</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<div class="modal fade" id="categoryAddModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Thêm Danh Mục</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form id="saveCategory">
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">Họ Tên</label>
+                <input ng-model="addsv.fullname" type="text" name="tenloai" required class="form-control" id="tenloai_add"
+                  placeholder="Nhập Tên Danh Mục">
+                <p style="color: red; padding-top: 10px;" id="errorName" class='errorName'></p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">Username</label>
+                <input ng-model="addsv.user" type="text" name="tenloai" required class="form-control" id="tenloai_add"
+                  placeholder="Nhập Tên Danh Mục">
+                <p style="color: red; padding-top: 10px;" id="errorName" class='errorName'></p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">password</label>
+                <input ng-model="addsv.pass" type="password" name="tenloai" required class="form-control"
+                  id="tenloai_add" placeholder="Nhập Tên Danh Mục">
+                <p style="color: red; padding-top: 10px;" id="errorName" class='errorName'></p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">Email</label>
+                <input ng-model="addsv.email" type="email" name="tenloai" required class="form-control" id="tenloai_add"
+                  placeholder="Nhập Tên Danh Mục">
+                <p style="color: red; padding-top: 10px;" id="errorName" class='errorName'></p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">Học Phí</label>
+                <input ng-model="addsv.schoolfee" type="number" name="tenloai" required class="form-control"
+                  id="tenloai_add" min="2000000" step="50000">
+                <p style="color: red; padding-top: 10px;" id="errorName" class='errorName'></p>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="form-group">
+                <label for="">Giới Tính</label><br>
+                <div class="form-check form-check-inline" style="padding-top: 10px;">
+                  <input ng-model="addsv.gender" type="radio" class="" id="gender" name="gender" value="true"
+                    style="height: 13px;" />
+                  <label class="" for="gender">Nam</label>
+                </div>
+                <div class="form-check-inline">
+                  <input ng-model="addsv.gender" type="radio" class="" id="gender2" name="gender" value="false"
+                    style="height: 13px;padding-bottom: 12px;" />
+                  <label class="" for="gender2">Nữ</label>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="">Ngày Sinh</label>
+                <input ng-model="addsv.birthday" type="text" name="tenloai" required class="form-control"
+                  id="tenloai_add">
+                <p style="color: red; padding-top: 10px;" id="errorName" class='errorName'></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button ng-click="addsv()" class="btn btn-primary">Thêm</button>
+          <button class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

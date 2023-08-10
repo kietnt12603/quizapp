@@ -1,0 +1,49 @@
+<main id="main" class="tw-mt-[-40px] mt-[100px]">
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs ">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="tw-font-medium	 tw-text-[#16df7e]">Lịch Sử Thi</h2>
+        <ol>
+          <li><a href="./index.html">Trang Chủ</a></li>
+          <li>Lịch Sử Thi</li>
+        </ol>
+      </div>
+
+    </div>
+  </section>
+  <section class="inner-page container min-h-[500px]">
+    <div class="row tw-pt-[20px]">
+      <div class="col-12">
+        <table class="table table-bordered">
+          <thead>
+            <tr class="text-center">
+              <th>ID</th>
+              <th>Môn Học</th>
+              <th>Điểm</th>
+              <th>Thời gian</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="item in markHistory|limitTo:pageSize:begin|orderBy:'date'" class="text-center">
+              <td >{{item.id}}</td>
+              <td>{{item.subject}}</td>
+              <td>{{item.mark}}</td>
+              <td>{{item.date}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-12">
+        <div class="text-center">
+          <button ng-click="first()" class="btn btn-primary text-light">First</button>
+          <button ng-click="prev()" class="btn btn-info text-light">Prev</button>
+          <button ng-click="next()" class="btn btn-info text-light">Next</button>
+          <button ng-click="last()" class="btn btn-primary text-light">Last</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>

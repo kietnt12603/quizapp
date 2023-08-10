@@ -1,0 +1,368 @@
+{
+  "listStudents": [
+    {
+      "username": "kietdb12603",
+      "password": "1234567",
+      "fullname": "Nguyễn Tuấn Kiệt",
+      "email": "tuankiet.aye24@gmail.com",
+      "gender": "true",
+      "birthday": "2003-06-18",
+      "schoolfee": 17000000,
+      "marks": "0",
+      "role": 1,
+      "id": 1
+    },
+    {
+      "username": "kietnt12603",
+      "password": "123456",
+      "fullname": "Nguyễn Tuấn Kiệt",
+      "email": "tuankiet.aye24@gmail.com",
+      "gender": "false",
+      "birthday": "2003-06-18",
+      "schoolfee": 5000000,
+      "marks": "0",
+      "role": 0,
+      "id": 2
+    }
+  ],
+  "listSubjects": [
+    {
+      "Id": "ADAV",
+      "Name": "Lập trình Android nâng cao",
+      "Logo": "ADAV.jpg"
+    },
+    {
+      "Id": "ADBS",
+      "Name": "Lập trình Android cơ bản",
+      "Logo": "ADBS.jpg"
+    },
+    {
+      "Id": "ADTE",
+      "Name": "Kiểm thử và triển khai ứng dụng Android",
+      "Logo": "ADTE.jpg"
+    },
+    {
+      "Id": "ADUI",
+      "Name": "Thiết kế giao diện trên Android",
+      "Logo": "ADUI.jpg"
+    },
+    {
+      "Id": "ASNE",
+      "Name": "Lập trình ASP.NET",
+      "Logo": "ASNE.png"
+    },
+    {
+      "Id": "CLCO",
+      "Name": "Điện toán đám mây",
+      "Logo": "CLCO.jpg"
+    },
+    {
+      "Id": "DBAV",
+      "Name": "SQL Server",
+      "Logo": "DBAV.png"
+    },
+    {
+      "Id": "DBBS",
+      "Name": "Cơ sở dữ liệu",
+      "Logo": "DBBS.png"
+    },
+    {
+      "Id": "GAME",
+      "Name": "Lập trình game 2D",
+      "Logo": "GAME.png"
+    },
+    {
+      "Id": "HTCS",
+      "Name": "HTML5 và CSS3",
+      "Logo": "HTCS.jpg"
+    },
+    {
+      "Id": "Test",
+      "Name": "Test",
+      "Logo": "HTCS.jpg"
+    },
+    {
+      "Id": "INMA",
+      "Name": "Internet Marketing",
+      "Logo": "INMA.jpg"
+    },
+    {
+      "Id": "JAAV",
+      "Name": "Lập trình Java nâng cao",
+      "Logo": "JAAV.png"
+    },
+    {
+      "Id": "JABS",
+      "Name": "Lập trình hướng đối tượng với Java",
+      "Logo": "JABS.png"
+    },
+    {
+      "Id": "JSPR",
+      "Name": "Lập trình JavaScript",
+      "Logo": "JSPR.png"
+    },
+    {
+      "Id": "LAYO",
+      "Name": "Thiết kế layout",
+      "Logo": "LAYO.jpg"
+    },
+    {
+      "Id": "MOWE",
+      "Name": "Thiết kế web cho điện thoại di động",
+      "Logo": "MOWE.png"
+    },
+    {
+      "Id": "PHPP",
+      "Name": "Lập trình PHP",
+      "Logo": "PHPP.png"
+    },
+    {
+      "Id": "PMAG",
+      "Name": "Quản lý dự án với Agile",
+      "Logo": "PMAG.jpg"
+    },
+    {
+      "Id": "VBPR",
+      "Name": "Lập trình VB.NET",
+      "Logo": "VBPR.png"
+    },
+    {
+      "Id": "WEBU",
+      "Name": "Xây dựng trang web",
+      "Logo": "WEBU.jpg"
+    }
+  ],
+  "ketqua": [
+    {
+      "id": 940,
+      "subject": "Kiểm thử và triển khai ứng dụng Android",
+      "iduser": 1,
+      "mark": 4,
+      "date": "2023-04-11T12:36:18.576Z"
+    },
+    {
+      "id": 957,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 1,
+      "date": "2023-04-12T02:28:33.407Z"
+    },
+    {
+      "id": 501,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:28:36.205Z"
+    },
+    {
+      "id": 173,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:28:43.267Z"
+    },
+    {
+      "id": 953,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 2,
+      "date": "2023-04-12T02:30:05.424Z"
+    },
+    {
+      "id": 297,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:30:39.058Z"
+    },
+    {
+      "id": 576,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 1,
+      "date": "2023-04-12T02:32:57.978Z"
+    },
+    {
+      "id": 900,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:33:01.117Z"
+    },
+    {
+      "id": 440,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:33:08.176Z"
+    },
+    {
+      "id": 905,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:33:58.802Z"
+    },
+    {
+      "id": 287,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:35:14.784Z"
+    },
+    {
+      "id": 727,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:35:17.592Z"
+    },
+    {
+      "id": 156,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:35:20.786Z"
+    },
+    {
+      "id": 699,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:37:24.635Z"
+    },
+    {
+      "id": 974,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:37:27.570Z"
+    },
+    {
+      "id": 704,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:38:47.261Z"
+    },
+    {
+      "id": 299,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:39:11.620Z"
+    },
+    {
+      "id": 847,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:43:52.622Z"
+    },
+    {
+      "id": 214,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:44:01.574Z"
+    },
+    {
+      "id": 793,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:44:04.021Z"
+    },
+    {
+      "id": 339,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:44:06.684Z"
+    },
+    {
+      "id": 649,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:46:24.087Z"
+    },
+    {
+      "id": 552,
+      "subject": "Lập trình Android cơ bản",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:46:30.139Z"
+    },
+    {
+      "id": 884,
+      "subject": "Thiết kế giao diện trên Android",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T02:59:12.369Z"
+    },
+    {
+      "id": 845,
+      "subject": "Thiết kế giao diện trên Android",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T03:00:33.662Z"
+    },
+    {
+      "id": 66,
+      "subject": "Thiết kế giao diện trên Android",
+      "iduser": 1,
+      "mark": 5,
+      "date": "2023-04-12T03:02:28.066Z"
+    },
+    {
+      "id": 218,
+      "subject": "Thiết kế giao diện trên Android",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T03:03:15.907Z"
+    },
+    {
+      "id": 942,
+      "subject": "SQL Server",
+      "iduser": 1,
+      "mark": 1,
+      "date": "2023-04-12T03:03:39.592Z"
+    },
+    {
+      "id": 259,
+      "subject": "Kiểm thử và triển khai ứng dụng Android",
+      "iduser": 1,
+      "mark": 6,
+      "date": "2023-04-12T03:04:23.305Z"
+    },
+    {
+      "id": 402,
+      "subject": "Kiểm thử và triển khai ứng dụng Android",
+      "iduser": 1,
+      "mark": 0,
+      "date": "2023-04-12T03:04:39.531Z"
+    },
+    {
+      "id": 325,
+      "subject": "Thiết kế giao diện trên Android",
+      "iduser": 1,
+      "mark": 4,
+      "date": "2023-04-12T03:05:31.404Z"
+    },
+    {
+      "id": 98,
+      "subject": "Lập trình PHP",
+      "iduser": 1,
+      "mark": 7,
+      "date": "2023-04-14T05:19:38.294Z"
+    },
+    {
+      "id": 774,
+      "subject": "Lập trình JavaScript",
+      "iduser": 1,
+      "mark": 7,
+      "date": "2023-04-15T15:53:27.272Z"
+    }
+  ]
+}

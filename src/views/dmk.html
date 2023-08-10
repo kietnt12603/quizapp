@@ -1,0 +1,100 @@
+<main id="main" class="tw-mt-[-40px] mt-[100px]">
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center">
+        <h2 class="tw-font-medium tw-text-[#16df7e]">Đổi Mật Khẩu</h2>
+        <ol>
+          <li><a href="./index.html">Trang Chủ</a></li>
+          <li>Đổi Mật Khẩu</li>
+        </ol>
+      </div>
+    </div>
+  </section>
+  <!-- End Breadcrumbs -->
+
+  <section class="inner-page">
+    <div id="contact" class="contact">
+      <div class="container">
+        <div class="section-title">
+          <span>Đổi Mật Khẩu</span>
+          <h2>Đổi Mật Khẩu</h2>
+          <p></p>
+        </div>
+
+        <div class="row tw-justify-center">
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form class="php-email-form" name="frmChangPass">
+              <div class="row">
+                <div class="form-group col-md-12">
+                  <label for="name">Mật Khẩu Cũ</label>
+                  <input
+                    ng-model="oldpassword"
+                    type="password"
+                    name="oldpassword"
+                    class="form-control"
+                    id="name"
+                    required
+                    minlength="6"
+                  />
+                  <small
+                    ng-show="frmChangPass.oldpassword.$error.required"
+                    id="oldpassword"
+                    class="form-text text-danger"
+                    >Vui lòng nhập mật khẩu cũ</small
+                  >
+                  <small
+                    ng-show="frmChangPass.oldpassword.$error.minlength"
+                    id="oldpassword"
+                    class="form-text text-danger"
+                    >Mật khẩu Phải Trên 6 Ký Tự</small
+                  >
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="name">Mật Khẩu Mới</label>
+                  <input
+                    ng-model="studentC.password"
+                    type="password"
+                    class="form-control"
+                    name="password"
+                    id="email"
+                    required
+                    minlength="6"
+                  />
+                  <small
+                    ng-show="frmChangPass.password.$error.required"
+                    id="password"
+                    class="form-text text-danger"
+                    >Vui lòng nhập mật khẩu mới</small
+                  >
+                  <small
+                    ng-show="frmChangPass.password.$error.minlength"
+                    id="password"
+                    class="form-text text-danger"
+                    >Mật khẩu phải hơn 6 kí tự</small
+                  >
+                </div>
+                <div class="form-group col-md-12">
+                  <label for="name">Nhập Lại Mật Khẩu Mới</label>
+                  <input name="renewpassword" ng-model="renewpassword" type="password" id="renewpassword" class="form-control border-primary" required re-pass>
+                        <small ng-show="frmChangPass.renewpassword.$error.required" id="renewpassword1" class="form-text text-danger">Vui lòng nhập lại mật khẩu</small>
+                        <small ng-show="frmChangPass.renewpassword.$invalid && !frmChangPass.renewpassword.$error.required" id="renewpassword2" class="form-text text-danger">Mật khẩu nhập lại không khớp</small>
+                </div>
+              </div>
+              <div class="text-center tw-mt-5">
+                <button
+                  ng-click="change()"
+                  ng-disabled="frmChangPass.$invalid"
+                  class="tw-ml-5 tw-bg-[#16df7e] tw-py-[10px] tw-px-[24px] tw-border-0 tw-rounded-[4px] tw-text-white hover:tw-bg-[#206bfb] hover:tw-text-white"
+                  style="transition: 0.4s"
+                >
+                  Đổi Mật Khẩu
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
